@@ -190,7 +190,7 @@
                                 <rect key="frame" x="16" y="347" width="343" height="223"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">哈得斯（古希臘語：ᾍδης[1]），又譯為哈迪斯[2]、黑帝斯[3][4]、哈帝斯、哈德斯[5][6]、哀地斯[7]、海地士[8]等，是希臘神話中統治冥界的神，也就是冥王，相對應於羅馬神話的普路托（拉丁語：Plūtō）。他是克羅諾斯和瑞亞的兒子，宙斯的哥哥。他的婚配者是姊姊狄蜜特的女兒珀耳塞福涅。希臘神話的死亡觀不存在帶善惡判斷的天堂與地獄，認為冥界是所有死者唯一的去處，因此黑帝斯的神話形象雖冷酷，但並無大多宗教神話中的惡神色彩，而且是典型的奧林帕斯英挺男子。由於冥府位於地底，黑帝斯也被視為地下礦產的支配者。</mutableString>
+                                <string key="text">哈得斯（古希臘語：ᾍδης，又譯為哈迪斯、黑帝斯、哈帝斯、哈德斯、哀地斯、海地士等，是希臘神話中統治冥界的神，也就是冥王，相對應於羅馬神話的普路托（拉丁語：Plūtō）。他是克羅諾斯和瑞亞的兒子，宙斯的哥哥。他的婚配者是姊姊狄蜜特的女兒珀耳塞福涅。希臘神話的死亡觀不存在帶善惡判斷的天堂與地獄，認為冥界是所有死者唯一的去處，因此黑帝斯的神話形象雖冷酷，但並無大多宗教神話中的惡神色彩，而且是典型的奧林帕斯英挺男子。由於冥府位於地底，黑帝斯也被視為地下礦產的支配者。</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
