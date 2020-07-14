@@ -1,24 +1,238 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Frist-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Frist" id="BYZ-38-t0r" customClass="ViewController" customModule="olympus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="olympus" translatesAutoresizingMaskIntoConstraints="NO" id="k2Z-jY-p08">
+                                <rect key="frame" x="16" y="20" width="343" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Your Name" textAlignment="center" minimumFontSize="24" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FNr-X9-yOe">
+                                <rect key="frame" x="61" y="387" width="252" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="go" enablesReturnKeyAutomatically="YES" textContentType="name"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Voo-bc-aCy">
+                                <rect key="frame" x="107" y="479" width="160" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Vp0-xm-nie" kind="show" id="u3e-He-M2W"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="20" y="94.902548725637189"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="fC3-kq-FDZ">
+            <objects>
+                <viewController title="List" id="Vp0-xm-nie" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="om0-oA-FYA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKq-g3-sqf">
+                                <rect key="frame" x="79" y="20" width="216" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="zeus"/>
+                                <connections>
+                                    <segue destination="lg7-Zg-c4e" kind="show" id="uAS-ef-iv0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLS-io-gNS">
+                                <rect key="frame" x="79" y="231" width="216" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="poseidon"/>
+                                <connections>
+                                    <segue destination="TVz-HC-vsR" kind="show" id="S2U-Wb-WSd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kdc-Uh-VrB">
+                                <rect key="frame" x="79" y="443" width="216" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="hades"/>
+                                <connections>
+                                    <segue destination="ghs-Qh-MDN" kind="show" id="QlN-Fx-EIO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O0C-Tr-VCZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VB0-GM-Bx1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wa4-Dg-wwp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="781.60000000000002" y="94.902548725637189"/>
+        </scene>
+        <!--zeus-->
+        <scene sceneID="2u3-1C-fxW">
+            <objects>
+                <viewController title="zeus" id="lg7-Zg-c4e" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hdb-f5-Ktq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zeus" translatesAutoresizingMaskIntoConstraints="NO" id="IQ0-cV-cFA">
+                                <rect key="frame" x="16" y="20" width="343" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ID8-KU-bVC">
+                                <rect key="frame" x="16" y="347" width="343" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">宙斯（古希臘語：Ζεύς，Zeús，希臘語：Δίας，Días，拉丁語：Zeus）是古希臘神話中統領宇宙的至高無上的天神，舊譯丟斯。羅馬神話稱朱庇特（拉丁語：Jupiter）。祂是克洛諾斯和瑞亞的最小的兒子。 宙斯是奧林匹斯山之王，也是宇宙之王。當他情緒良好時，希臘上空就陽光明媚；當他流淚時，希臘就將下雨。宙斯能驅散烏雲，使天空出現彩虹；但也能把黑雲堆於空中，在地上颳起強風，讓天空閃電雷鳴，大雨滂沱。
+宙斯代表了正義，他對人類的統治也是公正不偏的。當人們行善無惡時，土地就農產豐收，牛羊成群，魚蝦豐富；當人們做了惡事時，則天災人禍將鋪天蓋地而來。希臘神話英文版里稱宙斯的智慧是永恆的（wisdom is everlasting）。</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TL3-eA-kr5">
+                                <rect key="frame" x="290" y="578.5" width="49" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="arrowshape.turn.up.left.circle" catalog="system"/>
+                                <connections>
+                                    <segue destination="Vp0-xm-nie" kind="show" id="igv-zg-dwB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qVh-6r-kdh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SjS-Fc-7bR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zhq-rs-d9V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1718" y="-406"/>
+        </scene>
+        <!--poseidon-->
+        <scene sceneID="qlC-QW-pnU">
+            <objects>
+                <viewController title="poseidon" id="TVz-HC-vsR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vLU-gl-JOi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iJn-vq-zSg">
+                                <rect key="frame" x="16" y="347" width="343" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">波賽頓（古希臘語：Ποσειδών），又譯波賽頓、波色伊東，是希臘神話中的海神，宙斯的哥哥。其象徵物為「波賽頓三叉戟」。相應於其被希臘神話承襲的羅馬神話的涅普頓，他是海王星希臘名的來源。他的坐騎是白馬駕駛的黃金戰車。在神話中為人類帶來馬匹，所以也被視為馬匹之神。
+當初宙斯三兄弟抽籤均分勢力範圍，宙斯、黑帝斯分別統治天空、冥界，而波賽頓成為大海和湖泊的君主。 波賽頓的神性廣泛，有強烈的侵略性和極大的野心。他曾密謀奪取宙斯的天帝寶座，但被宙斯發覺，把他放逐到地上受刑，幫助拉奧墨多王修建特洛伊城。
+他常與諸神交戰，與雅典娜在雅典和特羅森爭霸。一次他和雅典娜就新城雅典起名之事爭吵，最後被迫向雅典娜讓步。另一次他因科林斯的國王之故與阿波羅激烈爭吵，最後以勝利告終。</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cd7-eo-Dlc">
+                                <rect key="frame" x="290" y="578.5" width="49" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="arrowshape.turn.up.left.circle" catalog="system"/>
+                                <connections>
+                                    <segue destination="Vp0-xm-nie" kind="show" id="lbJ-JR-cud"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="poseidon" translatesAutoresizingMaskIntoConstraints="NO" id="aIh-Pt-jLy">
+                                <rect key="frame" x="16" y="-4" width="343" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eTN-Gc-lXs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UiF-0S-E1e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3BM-xa-ycj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1826" y="329"/>
+        </scene>
+        <!--hades-->
+        <scene sceneID="fA4-wN-5A4">
+            <objects>
+                <viewController title="hades" id="ghs-Qh-MDN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wd3-J9-wep">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hades" translatesAutoresizingMaskIntoConstraints="NO" id="Sm9-vd-chI">
+                                <rect key="frame" x="16" y="20" width="343" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ajh-uj-ivC">
+                                <rect key="frame" x="16" y="347" width="343" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">哈得斯（古希臘語：ᾍδης[1]），又譯為哈迪斯[2]、黑帝斯[3][4]、哈帝斯、哈德斯[5][6]、哀地斯[7]、海地士[8]等，是希臘神話中統治冥界的神，也就是冥王，相對應於羅馬神話的普路托（拉丁語：Plūtō）。他是克羅諾斯和瑞亞的兒子，宙斯的哥哥。他的婚配者是姊姊狄蜜特的女兒珀耳塞福涅。希臘神話的死亡觀不存在帶善惡判斷的天堂與地獄，認為冥界是所有死者唯一的去處，因此黑帝斯的神話形象雖冷酷，但並無大多宗教神話中的惡神色彩，而且是典型的奧林帕斯英挺男子。由於冥府位於地底，黑帝斯也被視為地下礦產的支配者。</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjJ-EI-Jf8">
+                                <rect key="frame" x="290" y="578.5" width="49" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="arrowshape.turn.up.left.circle" catalog="system"/>
+                                <connections>
+                                    <segue destination="Vp0-xm-nie" kind="show" id="Ykj-b6-aBC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="igP-wb-QUG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KGP-zL-cFO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZF1-WA-IkY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="877"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ykj-b6-aBC"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="arrowshape.turn.up.left.circle" catalog="system" width="128" height="121"/>
+        <image name="hades" width="184" height="184"/>
+        <image name="olympus" width="511" height="394"/>
+        <image name="poseidon" width="184" height="184"/>
+        <image name="zeus" width="184" height="184"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
